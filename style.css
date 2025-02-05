@@ -11,6 +11,7 @@ html
 {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(242, 234, 225));
 
 }
 
