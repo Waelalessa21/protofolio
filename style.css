@@ -185,6 +185,7 @@ section {
 
 .content p {
     text-align: justify;
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
 }
 
 .typewriter span::before {
