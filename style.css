@@ -12,14 +12,16 @@ html
     scroll-behavior: smooth;
     overflow-x: hidden;
     background: white;
-    font-size: 100%;
+    font-size: 100%;  
+
 }
 
 body {
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-    background: white
+    background: white  ;
+    overflow: hidden;
 }
 
 nav {
@@ -270,9 +272,6 @@ section {
     box-shadow: 0 0 40px #004aad;
 }
 
-
-
-/* Education Section */
 .education-section {
 
     transform: scale(1);
@@ -444,12 +443,12 @@ section {
     width: 100%;
     padding: 30px 0; 
     overflow-x: hidden;
-
     background: white;
     text-align: center;
 }
 
 .projects-container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -562,7 +561,7 @@ section {
 .skills-button {
     background-color: transparent;
     padding: 5px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid #004aad;
     transition: 0.2s linear;
     display: inline-block; 
@@ -592,10 +591,6 @@ section {
 {
     display: none;
 }
-/* Responsive Design */
-
-
-
 
 .preview-btn {
     cursor: pointer;
@@ -705,7 +700,8 @@ video {
     }
 
     .skills-button {
-        padding: 10px 15px;
+        padding: 5px 20px;
+        border-radius: 10px;
     }
 
     .skills-button a {
@@ -713,18 +709,15 @@ video {
     }
 
     .skills-group {
-        display: none;
+        max-height: 0;
         opacity: 0;
-        transform: translateX(100%);
-        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
     }
 
     .skills-group.visible {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+        max-height: 500px; 
         opacity: 1;
-        transform: translateX(0);
     }
 
     .scroll-arrow {
@@ -733,6 +726,11 @@ video {
         font-size: 1.2rem;
         cursor: pointer;
         color: #004aad;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .scroll-arrow.rotated {
+        transform: rotate(180deg); 
     }
 }
 
