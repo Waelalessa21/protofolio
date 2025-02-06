@@ -751,12 +751,26 @@ video {
     }
 
     .project-description {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .project-link {
         font-size: 0.9rem;
     }
+
+    .preview-btn {
+        cursor: pointer;
+        background-color: transparent;
+        padding: 5px 5px;
+        border-radius: 10px;
+        border: 2px solid #004aad;
+        transition: 0.2s linear;
+    }
+
+    .preview-btn p {
+        font-size: 0.8rem;
+    }
+
 }
 
 
