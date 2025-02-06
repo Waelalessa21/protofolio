@@ -83,3 +83,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollArrow = document.querySelector('.scroll-arrow i');
+    const skillsGroups = document.querySelectorAll('.skills-group');
+
+    let currentGroupIndex = 0;
+
+    if (scrollArrow && skillsGroups.length > 0) {
+        scrollArrow.addEventListener('click', function() {
+            skillsGroups[currentGroupIndex].classList.remove('visible');
+
+            currentGroupIndex = (currentGroupIndex + 1) % skillsGroups.length;
+
+            skillsGroups[currentGroupIndex].classList.add('visible');
+
+            scrollArrow.classList.toggle('fa-square-right', currentGroupIndex === 0);
+            scrollArrow.classList.toggle('fa-square-left', currentGroupIndex !== 0);
+        });
+    }
+});

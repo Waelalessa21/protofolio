@@ -270,78 +270,7 @@ section {
     box-shadow: 0 0 40px #004aad;
 }
 
-@media (max-width: 884px) {
 
-    .content h1 {
-        font-size: clamp(0.8rem, 1.5rem + 4vw, 2rem);
-    }
-    
-    .content h1 span {
-        color: #004aad;
-        text-shadow: 0 0 10px #004aad;
-    }
-    
-    .content .typewriter {
-        font-weight: 600;
-        font-size: clamp(0.8rem, 0.8rem + 4vw, 1.5rem);
-    }
-    
-    .content .typewriter span {
-        color: #004aad;
-        font-size: 1.3rem;
-        text-shadow: 0 0 5px #004aad;
-        position: relative;
-        transition: 0.3s linear;
-    }
-
-    body {
-        overflow-y: visible;
-    }
-
-    nav .logo {
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
-
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nav-container .links {
-        display: none;
-    }
-
-    .hamburg,
-    .cancel {
-        display: block;
-    }
-
-    .main-container .content {
-        width: 80%;
-    }
-
-    .social-links i {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1rem;
-    }
-
-    .cancel {
-        color: white;
-    }
-
-    .main-container .image {
-        display: none;
-    }
-
-    .content p {
-        text-align: justify;
-        font-size: clamp(0.2rem, 0.1rem + 6vw, 0.8rem);
-    }
-}
 
 /* Education Section */
 .education-section {
@@ -425,26 +354,7 @@ section {
     color: #333;
 }
 
-@media (max-width: 884px) {
-    .education-section h2 {
-        font-size: 1.5rem;
-    }
 
-    .uni-logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    .uni-details h3 {
-        font-size: 1rem;
-    }
-
-    .uni-details .major,
-    .uni-details .gpa,
-    .uni-date p {
-        font-size: 0.7rem;
-    }
-}
 
 /* Experience Section */
 .experince-section {
@@ -527,34 +437,7 @@ section {
     color: #333;
 }
 
-@media (max-width: 884px) {
-    .experince-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .experince-details {
-        margin-left: 0;
-        margin-bottom: 15px;
-        padding-top: 20px;
-    }
-
-    .experince-date {
-        text-align: left;
-    }
-
-    .experince-section h2 {
-        font-size: 1.5rem;
-    }
-    .experince-section h3 {
-        font-size: 1rem;
-    }
-    .experince-details .desc,
-    .experince-details .role,
-    .experince-date p {
-        font-size: 0.9rem;
-    }
-}
 
 /* Projects Section */
 .projects-section {
@@ -654,23 +537,6 @@ section {
     background: #0056b3;
 }
 
-@media (max-width: 884px) {
-    .projects-section h2 {
-        font-size: 2rem;
-    }
-
-    .project-name {
-        font-size: 1.3rem;
-    }
-
-    .project-description {
-        font-size: 0.9rem;
-    }
-
-    .project-link {
-        font-size: 0.9rem;
-    }
-}
 
 /* Skills Section */
 .skills-section {
@@ -722,23 +588,13 @@ section {
 .skills-button:hover a {
     color: white;
 }
-
-/* Responsive Design */
-@media (max-width: 884px) {
-    .skills-section h2 {
-        font-size: 1.5rem;
-    }
-
-    .skills-button {
-        padding: 10px 15px; 
-    }
-
-    .skills-button a {
-        font-size: 0.7rem; 
-    }
-
-    
+.scroll-arrow
+{
+    display: none;
 }
+/* Responsive Design */
+
+
 
 
 .preview-btn {
@@ -809,4 +665,193 @@ video {
     width: 95%;
     height: 95%;
     object-fit: contain;
+}
+
+
+
+
+@media (max-width: 884px) {
+    .experince-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experince-details {
+        margin-left: 0;
+        margin-bottom: 15px;
+        padding-top: 20px;
+    }
+
+    .experince-date {
+        text-align: left;
+    }
+
+    .experince-section h2 {
+        font-size: 1.5rem;
+    }
+    .experince-section h3 {
+        font-size: 1rem;
+    }
+    .experince-details .desc,
+    .experince-details .role,
+    .experince-date p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 884px) {
+    .skills-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-button {
+        padding: 10px 15px;
+    }
+
+    .skills-button a {
+        font-size: 0.7rem;
+    }
+
+    .skills-group {
+        display: none;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .skills-group.visible {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .scroll-arrow {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #004aad;
+    }
+}
+
+
+@media (max-width: 884px) {
+    .projects-section h2 {
+        font-size: 2rem;
+    }
+
+    .projects-section h3 {
+        font-size: 0.8rem;
+    }
+
+    .project-name {
+        font-size: 1rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .project-link {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 884px) {
+    .education-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .uni-logo {
+        width: 3rem;
+        height: 3rem;
+        max-width: 100%;
+    }
+
+    .uni-details h3 {
+        font-size: 1rem;
+    }
+   
+
+    .uni-details .major,
+    .uni-details .gpa,
+    .uni-date p {
+        font-size: 0.7rem;
+    }
+
+ 
+}
+
+@media (max-width: 884px) {
+
+    .content h1 {
+        font-size: clamp(0.8rem, 1.5rem + 4vw, 2rem);
+    }
+    
+    .content h1 span {
+        color: #004aad;
+        text-shadow: 0 0 10px #004aad;
+    }
+    
+    .content .typewriter {
+        font-weight: 600;
+        font-size: clamp(0.8rem, 0.8rem + 4vw, 1.5rem);
+    }
+    
+    .content .typewriter span {
+        color: #004aad;
+        font-size: 1.3rem;
+        text-shadow: 0 0 5px #004aad;
+        position: relative;
+        transition: 0.3s linear;
+    }
+
+  
+
+    nav .logo {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg,
+    .cancel {
+        display: block;
+    }
+
+    .main-container .content {
+        width: 80%;
+    }
+
+    .social-links i {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .cancel {
+        color: white;
+    }
+
+    .main-container .image {
+        display: none;
+    }
+
+    .content p {
+        text-align: justify;
+        font-size: clamp(0.2rem, 0.1rem + 6vw, 0.8rem);
+    }
 }
