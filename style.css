@@ -288,7 +288,7 @@ section {
     
     .content .typewriter span {
         color: #004aad;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-shadow: 0 0 5px #004aad;
         position: relative;
         transition: 0.3s linear;
@@ -436,13 +436,13 @@ section {
     }
 
     .uni-details h3 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .uni-details .major,
     .uni-details .gpa,
     .uni-date p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -675,7 +675,6 @@ section {
     width: 100%;
     padding: 30px 0;
     overflow-x: hidden;
-
     background: white;
     text-align: left;
 }
