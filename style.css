@@ -829,12 +829,9 @@ video {
 
 
 @media (max-width: 480px) {
-    .Achivements-section h2 {
-        font-size: 0.8rem;
-    }
-
+    
     .Achivements-section h3 {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .Achivements-name {
