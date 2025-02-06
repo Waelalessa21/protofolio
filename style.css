@@ -11,8 +11,8 @@ html
 {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background: white
-
+    background: white;
+    font-size: 100%;
 }
 
 body {
@@ -436,7 +436,7 @@ section {
     }
 
     .uni-details h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .uni-details .major,
@@ -546,7 +546,9 @@ section {
     .experince-section h2 {
         font-size: 1.5rem;
     }
-
+    .experince-section h3 {
+        font-size: 1rem;
+    }
     .experince-details .desc,
     .experince-details .role,
     .experince-date p {
@@ -734,6 +736,8 @@ section {
     .skills-button a {
         font-size: 0.7rem; 
     }
+
+    
 }
 
 
